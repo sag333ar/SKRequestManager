@@ -16,15 +16,15 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SKRequestManager"
-  s.version      = "1.0.2"
-  s.summary      = "A request manager component in Swift Programming Language for iOS/"
+  s.version      = "1.0.3"
+  s.summary      = "A request manager component in Swift Programming Language for iOS."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = "A request manager component in Swift Programming Language for iOS"
+  s.description  = "A request manager component in Swift Programming Language for iOS which provides URLSession related actions."
   s.homepage     = "http://sagarrkothari.com/"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
@@ -77,7 +77,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/SKRequestManager.git", :tag => "#{s.version}" }
+  s.source       = { :git => "http://github.com/sag333ar/SKRequestManager.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
