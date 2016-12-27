@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SKRequestManager"
-  s.version      = "1.0.3"
+  s.version      = "1.0.4"
   s.summary      = "A request manager component in Swift Programming Language for iOS."
 
   # This description is used to generate tags and improve search results.
@@ -61,7 +61,7 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  s.platform     = :ios
+  s.platform     = :ios, "9.0"
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
@@ -77,7 +77,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://github.com/sag333ar/SKRequestManager.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/sag333ar/SKRequestManager.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
