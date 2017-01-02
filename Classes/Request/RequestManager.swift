@@ -6,7 +6,7 @@ import UIKit
 
 @objc open class RequestManager: NSObject {
 
-	open class func invokeRequestForData(_ request: URLRequest,
+	@discardableResult open class func invokeRequestForData(_ request: URLRequest,
 	                                       handler: @escaping (Response) -> Void) -> URLSessionDataTask {
 		let task = URLSession.shared.dataTask(with: request) { (data: Data?, response: URLResponse?, error: Error?) in
 			if let r = error {

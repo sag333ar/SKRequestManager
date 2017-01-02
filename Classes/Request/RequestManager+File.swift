@@ -56,7 +56,7 @@ extension RequestManager {
 		return fm.fileExists(atPath: filePath)
 	}
 
-	open class func loadCachedFile(_ forURLString: String, handler: @escaping (String) -> Void) -> URLSessionDownloadTask? {
+	@discardableResult open class func loadCachedFile(_ forURLString: String, handler: @escaping (String) -> Void) -> URLSessionDownloadTask? {
 		if self.isFileDownloaded(forURLString) {
 			handler(self.generatedLocalURL(forURLString))
 			return nil

@@ -7,7 +7,7 @@ import Foundation
 
 extension RequestManager {
 
-	open class func uploadPhoto(_ request: URLRequest, image: UIImage, handler: @escaping (Response) -> Void) -> URLSessionDataTask {
+	@discardableResult open class func uploadPhoto(_ request: URLRequest, image: UIImage, handler: @escaping (Response) -> Void) -> URLSessionDataTask {
 		var rqst = request
 		let imageData = UIImagePNGRepresentation(image)
 		rqst.httpMethod = "POST"
@@ -35,7 +35,7 @@ extension RequestManager {
 		return self.invokeRequestForData(rqst, handler: handler)
 	}
 
-	open class func invokeRequestToDownloadImage(_ stringURLOfImage: String, handler: @escaping (Response) -> Void) -> URLSessionDataTask? {
+	@discardableResult open class func invokeRequestToDownloadImage(_ stringURLOfImage: String, handler: @escaping (Response) -> Void) -> URLSessionDataTask? {
 		var anotherStr = self.removeURLEncoding(stringURLOfImage).replacingOccurrences(of: ":", with: "_")
 		anotherStr = anotherStr.replacingOccurrences(of: "/", with: "_")
 		anotherStr = anotherStr.replacingOccurrences(of: "\\", with: "_")
