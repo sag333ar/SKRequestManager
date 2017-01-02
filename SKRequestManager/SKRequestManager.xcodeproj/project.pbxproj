@@ -7,10 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BD604861E1A68480080E956 /* RequestManager+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD6047A1E1A68480080E956 /* RequestManager+File.swift */; };
+		1BD604871E1A68480080E956 /* RequestManager+ImageUploadDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD6047B1E1A68480080E956 /* RequestManager+ImageUploadDownload.swift */; };
+		1BD604881E1A68480080E956 /* RequestManager+RqstUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD6047C1E1A68480080E956 /* RequestManager+RqstUtilities.swift */; };
+		1BD604891E1A68480080E956 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD6047D1E1A68480080E956 /* RequestManager.swift */; };
+		1BD6048A1E1A68480080E956 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD6047E1E1A68480080E956 /* RequestType.swift */; };
+		1BD6048B1E1A68480080E956 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD604801E1A68480080E956 /* Response.swift */; };
+		1BD6048C1E1A68480080E956 /* ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD604811E1A68480080E956 /* ResponseData.swift */; };
+		1BD6048D1E1A68480080E956 /* ResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD604821E1A68480080E956 /* ResponseError.swift */; };
+		1BD6048E1E1A68480080E956 /* ResponseImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD604831E1A68480080E956 /* ResponseImage.swift */; };
+		1BD6048F1E1A68480080E956 /* ResponseJSONArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD604841E1A68480080E956 /* ResponseJSONArray.swift */; };
+		1BD604901E1A68480080E956 /* ResponseJSONDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD604851E1A68480080E956 /* ResponseJSONDictionary.swift */; };
 		1BE84E301E13F62E00BC3925 /* SKRequestManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE84E261E13F62E00BC3925 /* SKRequestManager.framework */; };
 		1BE84E351E13F62E00BC3925 /* SKRequestManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE84E341E13F62E00BC3925 /* SKRequestManagerTests.swift */; };
 		1BE84E371E13F62E00BC3925 /* SKRequestManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BE84E291E13F62E00BC3925 /* SKRequestManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1BE84E411E13F64C00BC3925 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE84E401E13F64C00BC3925 /* RequestManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,13 +34,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1BD6047A1E1A68480080E956 /* RequestManager+File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RequestManager+File.swift"; sourceTree = "<group>"; };
+		1BD6047B1E1A68480080E956 /* RequestManager+ImageUploadDownload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RequestManager+ImageUploadDownload.swift"; sourceTree = "<group>"; };
+		1BD6047C1E1A68480080E956 /* RequestManager+RqstUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RequestManager+RqstUtilities.swift"; sourceTree = "<group>"; };
+		1BD6047D1E1A68480080E956 /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		1BD6047E1E1A68480080E956 /* RequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
+		1BD604801E1A68480080E956 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		1BD604811E1A68480080E956 /* ResponseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseData.swift; sourceTree = "<group>"; };
+		1BD604821E1A68480080E956 /* ResponseError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseError.swift; sourceTree = "<group>"; };
+		1BD604831E1A68480080E956 /* ResponseImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseImage.swift; sourceTree = "<group>"; };
+		1BD604841E1A68480080E956 /* ResponseJSONArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseJSONArray.swift; sourceTree = "<group>"; };
+		1BD604851E1A68480080E956 /* ResponseJSONDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseJSONDictionary.swift; sourceTree = "<group>"; };
 		1BE84E261E13F62E00BC3925 /* SKRequestManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SKRequestManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BE84E291E13F62E00BC3925 /* SKRequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKRequestManager.h; sourceTree = "<group>"; };
 		1BE84E2A1E13F62E00BC3925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BE84E2F1E13F62E00BC3925 /* SKRequestManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SKRequestManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BE84E341E13F62E00BC3925 /* SKRequestManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKRequestManagerTests.swift; sourceTree = "<group>"; };
 		1BE84E361E13F62E00BC3925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1BE84E401E13F64C00BC3925 /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +72,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BD604781E1A68480080E956 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1BD604791E1A68480080E956 /* Request */,
+				1BD6047F1E1A68480080E956 /* Response */,
+			);
+			name = Classes;
+			path = ../../Classes;
+			sourceTree = "<group>";
+		};
+		1BD604791E1A68480080E956 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				1BD6047A1E1A68480080E956 /* RequestManager+File.swift */,
+				1BD6047B1E1A68480080E956 /* RequestManager+ImageUploadDownload.swift */,
+				1BD6047C1E1A68480080E956 /* RequestManager+RqstUtilities.swift */,
+				1BD6047D1E1A68480080E956 /* RequestManager.swift */,
+				1BD6047E1E1A68480080E956 /* RequestType.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		1BD6047F1E1A68480080E956 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				1BD604801E1A68480080E956 /* Response.swift */,
+				1BD604811E1A68480080E956 /* ResponseData.swift */,
+				1BD604821E1A68480080E956 /* ResponseError.swift */,
+				1BD604831E1A68480080E956 /* ResponseImage.swift */,
+				1BD604841E1A68480080E956 /* ResponseJSONArray.swift */,
+				1BD604851E1A68480080E956 /* ResponseJSONDictionary.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
 		1BE84E1C1E13F62E00BC3925 = {
 			isa = PBXGroup;
 			children = (
@@ -73,7 +128,7 @@
 		1BE84E281E13F62E00BC3925 /* SKRequestManager */ = {
 			isa = PBXGroup;
 			children = (
-				1BE84E401E13F64C00BC3925 /* RequestManager.swift */,
+				1BD604781E1A68480080E956 /* Classes */,
 				1BE84E291E13F62E00BC3925 /* SKRequestManager.h */,
 				1BE84E2A1E13F62E00BC3925 /* Info.plist */,
 			);
@@ -111,6 +166,7 @@
 				1BE84E221E13F62E00BC3925 /* Frameworks */,
 				1BE84E231E13F62E00BC3925 /* Headers */,
 				1BE84E241E13F62E00BC3925 /* Resources */,
+				1BD604631E1A603C0080E956 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -196,12 +252,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1BD604631E1A603C0080E956 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1BE84E211E13F62E00BC3925 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BE84E411E13F64C00BC3925 /* RequestManager.swift in Sources */,
+				1BD604871E1A68480080E956 /* RequestManager+ImageUploadDownload.swift in Sources */,
+				1BD6048C1E1A68480080E956 /* ResponseData.swift in Sources */,
+				1BD604901E1A68480080E956 /* ResponseJSONDictionary.swift in Sources */,
+				1BD604881E1A68480080E956 /* RequestManager+RqstUtilities.swift in Sources */,
+				1BD604861E1A68480080E956 /* RequestManager+File.swift in Sources */,
+				1BD604891E1A68480080E956 /* RequestManager.swift in Sources */,
+				1BD6048B1E1A68480080E956 /* Response.swift in Sources */,
+				1BD6048A1E1A68480080E956 /* RequestType.swift in Sources */,
+				1BD6048D1E1A68480080E956 /* ResponseError.swift in Sources */,
+				1BD6048F1E1A68480080E956 /* ResponseJSONArray.swift in Sources */,
+				1BD6048E1E1A68480080E956 /* ResponseImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +491,7 @@
 				1BE84E3C1E13F62E00BC3925 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1BE84E3D1E13F62E00BC3925 /* Build configuration list for PBXNativeTarget "SKRequestManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +500,7 @@
 				1BE84E3F1E13F62E00BC3925 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
