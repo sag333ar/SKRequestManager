@@ -10,7 +10,7 @@ import Foundation
 
 extension RequestManager {
 
-	open class func generateQueryString(_ isHTTPsScheme: Bool, host: String, path: String, extensionOfPath: String = "", parameters: [String: String]) -> URL? {
+	@discardableResult open class func generateQueryString(_ isHTTPsScheme: Bool, host: String, path: String, extensionOfPath: String = "", parameters: [String: String]) -> URL? {
 		var components = URLComponents()
 		components.scheme = isHTTPsScheme ? "https" : "http"
 		components.host = host
@@ -23,15 +23,15 @@ extension RequestManager {
 		return components.url
 	}
 
-	open class func addURLEncoding(_ string: String) -> String {
+	@discardableResult open class func addURLEncoding(_ string: String) -> String {
 		return string.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!
 	}
 
-	open class func removeURLEncoding(_ string: String) -> String {
+	@discardableResult open class func removeURLEncoding(_ string: String) -> String {
 		return string.removingPercentEncoding!
 	}
 
-	open class func generateRequest(_ urlString: String,
+	@discardableResult open class func generateRequest(_ urlString: String,
 	                                dictionaryOfHeaders: [String: String]?,
 	                                postData: Data?,
 	                                requestType: RequestType,

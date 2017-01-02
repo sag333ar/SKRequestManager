@@ -48,7 +48,7 @@ extension RequestManager {
 		}
 	}
 
-	open class func isFileDownloaded(_ urlString: String) -> Bool {
+	@discardableResult open class func isFileDownloaded(_ urlString: String) -> Bool {
 		let anotherStr = self.generatedLocalURL(urlString)
 		let fm = FileManager.default
 		let docDir = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)[0]

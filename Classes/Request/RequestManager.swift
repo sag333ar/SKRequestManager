@@ -24,7 +24,7 @@ import UIKit
 		return task
 	}
 
-	open class func parseJSONData(_ data: Data, urlresponse: URLResponse?) -> Response {
+	@discardableResult open class func parseJSONData(_ data: Data, urlresponse: URLResponse?) -> Response {
 		do {
 			let obj = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments)
 			if let dictionary = obj as? [String: AnyObject] {
@@ -45,7 +45,7 @@ import UIKit
 		}
 	}
 
-	open class func invokeRequestForJSON(_ request: URLRequest, handler: @escaping (Response) -> Void) -> URLSessionDataTask {
+	@discardableResult open class func invokeRequestForJSON(_ request: URLRequest, handler: @escaping (Response) -> Void) -> URLSessionDataTask {
 		let task = self.invokeRequestForData(request) { (response: Response) in
 			if let responseData = response as? ResponseData {
 				handler(RequestManager.parseJSONData(responseData.data, urlresponse: responseData.response))
